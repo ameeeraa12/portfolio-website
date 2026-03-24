@@ -1,0 +1,16 @@
+name: Portfolio Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check files
+        run: echo "Portfolio website workflow running successfully
